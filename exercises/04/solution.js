@@ -5,7 +5,7 @@
  */
 
 const getCurrentDate = () => {
-    // todo
+    return new Date().toLocaleDateString();
 };
 
-console.log(getCurrentDate())
+getCurrentDate();
