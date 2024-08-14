@@ -1,5 +1,5 @@
 /**
-    @description Write a application
+    @description Write a function
     that return true if a number
     is 100 or the sum
     of the two numbers are 100.
