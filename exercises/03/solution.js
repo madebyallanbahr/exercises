@@ -1,19 +1,21 @@
 /**
  * @description Write a function that receive a string that replace
  * each caracther for behavior in alphabet.
- * @function getFromStringSomeAlpha
+ * @function replaceWithNextAlphabetChar
  */
 
-const getFromStringSomeAlpha = (str) => {
-    const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+const replaceWithNextAlphabetChar = (str) => {
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-    str = str.toLowerCase().split('')
+  let actual = str.toLowerCase();
+  let replaced = "";
 
-    str.forEach((letter) => {
-        if (alphabet.includes(letter)) {
-            console.log(alphabet.indexOf(letter))
-        }
-    })
+  let strToReplace = actual.split("");
 
-}
-getFromStringSomeAlpha('Meu Carro')
+  strToReplace.forEach((letter) => {
+    if (alphabet.includes(letter))
+      replaced += alphabet[alphabet.indexOf(letter) + 1];
+  });
+
+  return { replaced: replaced, actual: actual };
+};
