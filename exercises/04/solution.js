@@ -8,4 +8,4 @@ const getCurrentDate = () => {
     return new Date().toLocaleDateString();
 };
 
-getCurrentDate();
+getCurrentDate(); // dd/mm/yyyy

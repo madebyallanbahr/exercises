@@ -8,3 +8,4 @@ const getExtensionFilename = (filename) => {
     return filename.slice(filename.lastIndexOf("."));
   };
   
+getExtensionFilename('image.jpeg.exe') // .exe

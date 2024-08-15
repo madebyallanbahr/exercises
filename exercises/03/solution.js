@@ -19,3 +19,17 @@ const replaceWithNextAlphabetChar = (str) => {
 
   return { replaced: replaced, actual: actual };
 };
+
+replaceWithNextAlphabetChar("Outro");
+/* 
+-> input: outro 
+[
+  o -> p,
+  u -> v,
+  t -> u,
+  r -> s,
+  o -> p
+]
+
+-> output: pvusp
+*/

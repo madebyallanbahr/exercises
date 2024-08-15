@@ -7,7 +7,8 @@
 const returnNewInFrontString = (string) => {
   if (!string) return null;
   if (string.includes("New!")) return string;
-  return string = "New!" + string;
+  return (string = "New!" + string);
 };
 
-console.log(returnNewInFrontString("JustDoIt"));
+returnNewInFrontString('New!') // New!
+returnNewInFrontString('Something') // New!Something

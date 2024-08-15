@@ -9,5 +9,11 @@
 */
 
 const isEqualOneHundred = (x, y) => {
-    return x == 100 || y == 100 || x + y == 100;
-  };
+  return x == 100 || y == 100 || x + y == 100;
+};
+
+isEqualOneHundred(50, 50); // true
+isEqualOneHundred(100, 0); // true
+isEqualOneHundred(0, 100); // true
+isEqualOneHundred(25, 25); // false
+isEqualOneHundred(0, 0); // false
